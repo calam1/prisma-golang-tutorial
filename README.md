@@ -3,6 +3,8 @@ prisma tutorial - downgraded golang to 1.11.x had to use dep for this, plus the 
 
 It was not the easiest tutorial to get through, enough typos to cause headaches
 
+https://www.prisma.io/docs/get-started/01-setting-up-prisma-new-database-GO-g002/
+
 ```
 [[override]]
   name = "github.com/russross/blackfriday"
