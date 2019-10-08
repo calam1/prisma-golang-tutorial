@@ -3,10 +3,9 @@ exec:
   filename: server/generated.go
 models:
   Post:
-    model: github.com/hello-world/generated/prisma-client.Post
+    model: github.com/prismaTutorial/generated/prisma-client.Post
   User:
-    model: github.com/hello-world/generated/prisma-client.User
+    model: github.com/prismaTutorial/generated/prisma-client.User
 resolver:
-  # Goal: copy&paste from generated file
   filename: tmp/resolver.go
   type: Resolver

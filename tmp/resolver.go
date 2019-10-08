@@ -3,24 +3,24 @@ package tmp
 import (
 	"context"
 
-	prisma "github.com/hello-world/generated/prisma-client"
-	main "github.com/hello-world/server"
+	prisma "github.com/prismaTutorial/generated/prisma-client"
+	"github.com/prismaTutorial/server"
 )
 
 // THIS CODE IS A STARTING POINT ONLY. IT WILL NOT BE UPDATED WITH SCHEMA CHANGES.
 
 type Resolver struct{}
 
-func (r *Resolver) Mutation() main.MutationResolver {
+func (r *Resolver) Mutation() server.MutationResolver {
 	return &mutationResolver{r}
 }
-func (r *Resolver) Post() main.PostResolver {
+func (r *Resolver) Post() server.PostResolver {
 	return &postResolver{r}
 }
-func (r *Resolver) Query() main.QueryResolver {
+func (r *Resolver) Query() server.QueryResolver {
 	return &queryResolver{r}
 }
-func (r *Resolver) User() main.UserResolver {
+func (r *Resolver) User() server.UserResolver {
 	return &userResolver{r}
 }
 
